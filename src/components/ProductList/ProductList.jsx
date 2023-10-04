@@ -30,7 +30,7 @@ export const ProductList = () => {
       queryId
     }
 
-      fetch('https://whispering-harbor-13560.herokuapp.com/web-data', {
+      fetch('https://localhost/8000', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
