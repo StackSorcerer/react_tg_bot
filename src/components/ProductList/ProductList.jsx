@@ -21,7 +21,7 @@ const getTotalPrice = (items) => {
   }, 0)
 }
 
-export const ProductList = () => {
+export const ProductList = ({products}) => {
 
   const { tg, queryId } = useTelegram()
   const [addedItems, setAddedItems] = useState([])
