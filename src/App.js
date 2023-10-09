@@ -5,6 +5,7 @@ import { Header } from './components/Header/Header';
 import { ProductList } from './components/ProductList/ProductList';
 import { Form } from './components/Form/Form';
 import { SpeedDialButton } from './components/SpeedDialButton/SpeedDialButton';
+import Practice from './components/Practice/Practice';
 
 
 // import { useTelegram } from './hooks/useTelegram';
@@ -30,11 +31,13 @@ function App() {
 
   return (
     <div className="App">
+      <Practice/>
       <Header>Заголовок</Header>
       <Routes>
         <Route index element={<ProductList products={products} />}></Route>
         <Route path={'form'} element={<Form />}></Route>
       </Routes>
+      <Practice/>
       <SpeedDialButton products={products} />
     </div>
   );
